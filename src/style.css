@@ -59,7 +59,7 @@ p {
   background: rgba(0, 0, 0, 0.7);
   padding: 1rem;
   box-sizing: border-box;
-  transform: translateX(-100%);
+  transform: translateX(calc(-100% + 20px));
   transition: transform 0.3s ease;
 }
 
