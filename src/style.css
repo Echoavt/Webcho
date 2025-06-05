@@ -7,6 +7,7 @@ body {
   height: 100vh;
   margin: 0;
   color: #fff;
+  overflow-x: hidden;
 }
 
 #game {
@@ -46,4 +47,49 @@ button:disabled {
 p {
   margin-top: 1rem;
   font-size: 1rem;
+}
+
+/* Sliding sidebar */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+#sidebar:hover {
+  transform: translateX(0);
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar li {
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+#sidebar .sidebar-footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+#sidebar .sidebar-footer svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 0.5rem;
+  fill: currentColor;
 }
