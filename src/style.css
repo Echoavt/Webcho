@@ -93,3 +93,45 @@ p {
   margin-left: 0.5rem;
   fill: currentColor;
 }
+#scoreboard {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+#scoreboard h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+#scoreboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#scoreboard li {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+#leaderboard {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+#leaderboard th,
+#leaderboard td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+#leaderboard th {
+  background: rgba(0, 0, 0, 0.3);
+}
