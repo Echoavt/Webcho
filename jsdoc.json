@@ -1,0 +1,4 @@
+{
+  "opts": {"destination": "docs/api"},
+  "source": {"include": ["src"]}
+}
