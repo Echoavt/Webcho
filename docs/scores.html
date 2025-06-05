@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guess the Number</title>
+    <title>Leaderboard</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="scores.js"></script>
   </head>
   <body>
     <div id="sidebar">
@@ -20,13 +21,12 @@
         </svg>
       </div>
     </div>
-
-    <section id="instructions">
-      <h2>How to Play</h2>
-      <p>Try to guess the secret number between 1 and 100. Enter your guess and
-      press <strong>Guess</strong>. Each attempt will be recorded in the
-      scoreboard below. Use the feedback to zero in on the correct answer.</p>
-    </section>
-    <script type="module" src="main.js"></script>
+    <h1>Top Scores</h1>
+    <table id="leaderboard">
+      <thead>
+        <tr><th>Name</th><th>Attempts</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
   </body>
 </html>
